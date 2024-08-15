@@ -259,32 +259,27 @@
 <section class="contact" id="contact">
   <h2 class="heading">Contact <span>Me!</span></h2>
 
-  <form
-  action="https://formspree.io/f/mnnazqno"
-  method="POST">
+  <form action="https://api.web3forms.com/submit" method="POST">
 
-  <div class="input-box">
-             <input type="text" placeholder="Full Name">
-             <input type="email" placeholder="Email Address">
-          
-            
-            </div>
-         <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
-        </div>
+    <input type="hidden" name="access_key" value="031cccab-56d5-46ea-817e-f3d85d257746">
+<div class="input-box">
+    <input type="text" name="name" placeholder="Full Name">
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input name="phone" type="number" placeholder="Mobile Number">
+    <input type="text" placeholder="Email Subject">
+    <select name="input-box">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <textarea name="message"id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
    
-        <select name="input-box">
-            <option>Male</option>
-            <option>Female</option>
-        </select>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn"> 
-    
-    
-    
-    
-    </form>
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+</div>
+<button type="submit" class="btn">Send Message</button>
+
+</form>
+
+  
 </section>
 
 
